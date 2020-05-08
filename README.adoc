@@ -1,0 +1,21 @@
+= infra stuff
+
+== Example Setup Jenkins
+
+* install basic jenkins: jenkins-install.sh
+* enable sec: enableSec.sh
+** set env vars JENKINS_USER_ID and $JENKINS_USER_PW
+* initial jobs: provisionSeed.sh
+* run seed job
+
+=== Required Plugins
+
+* Authorize Project
+* Git
+* Git Client
+* Job Dsl
+* Pipeline: Job
+* Pipeline: Basic Steps
+* Pipeline: Groovy
+
+those can be stored e.g. on server, see also commented copy in jenkins-install.sh
